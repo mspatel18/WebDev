@@ -3,7 +3,7 @@
   font-family: 'Roboto Mono', monospace;
 }
 body {
-  min-height: 100vh;
+  min-height:97vh;
   display: grid;
   place-items: center;
   background: rgb(0,0,0);
