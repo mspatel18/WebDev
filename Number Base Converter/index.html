@@ -5,10 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Number Base Converter</title>
+    <link rel="stylesheet" href="style.css">
     <script src="script.js"></script>
   </head>
   <body>
-    <div>
+    <div class="whole">
       <div>
         <input id="txtNumber" type="text" placeholder="Number" />
       </div>
@@ -21,8 +22,9 @@
           <option value="8">(8) Octal</option>
           <option value="16">(16) Hex</option>
         </select>
+        <span class="custom-arrow"></span>
       </div>
-      <div class="customs-select">
+      <div class="custom-select">
         <select name="To" id="txtToBase">
           <option selected="selected">To</option>
           <option value="10">(10) Decimal</option>
@@ -30,16 +32,17 @@
           <option value="8">(8) Octal</option>
           <option value="16">(16) Hex</option>
         </select>
+        <span class="custom-arrow"></span>
       </div>
-      <div id="lblResult">Answer</div>
-      <div>
+      <div class="subbtn">
         <button
-          type="button"
+          type="button"  class="btn41-43 btn-41"
           onclick='changeBase(document.getElementById("txtNumber").value, document.getElementById("txtFromBase").value,  document.getElementById("txtToBase").value)'
         >
-          Click Me!
+          = Convert
         </button>
       </div>
+      <div id="lblResult">Result</div>
     </div>
   </body>
 </html>

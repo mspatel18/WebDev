@@ -2,8 +2,132 @@ body {
   min-height: 100vh;
   display: grid;
   place-items: center;
+  background: rgb(0,0,0);
+  background-image: linear-gradient( 76.3deg,  rgb(27, 38, 48) 12.6%, rgb(38, 66, 89) 82.8% );
+}
+input{
+  background-color: transparent;
+  font-size: 1.5rem;
+  padding: 0.5em 1em;
+  margin: 20px 0px;
+  padding: 10px;
+  width: -webkit-fill-available;
+  border-color: white;
+  color: white;
+}
+select option{
+  background: transparent;
+  background-color: transparent;
+  color: black;
 }
 
 select {
-  box-shadow: 0 10px 25px rgba(0, 0, 0,0)
+  background-color: transparent;
+  box-shadow: 0 10px 25px rgba(0, 0, 0,0);
+  font-size: 1.5rem;
+  padding: 0.5em 3em 0.5em 1em;
+  border-color: white;
+  color: white;
+  appearance: none;
+
+  /* margin: 10px; */
+}
+#lblResult{
+  color:white;
+  font-size:100px;
+  display: flex;
+  justify-content: center;
+}
+.custom-select{
+  display: inline-block;
+  position: relative;
+  
+}
+.custom-arrow{
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: block;
+  background: transparent;
+  height: 100%;
+  width: 2rem;
+  pointer-events: none;
+}
+.custom-arrow::before,
+.custom-arrow::after{
+  --size: 0.4em;
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 0;
+  left: 50%;
+
+  transform: translate(-50%,-50%);
+}
+.custom-arrow::before{
+  border-left: var(--size) solid transparent;
+  border-right: var(--size) solid transparent;
+  border-bottom: var(--size) solid white;
+  top: 30%;
+}
+.custom-arrow::after{
+  border-left: var(--size) solid transparent;
+  border-right: var(--size) solid transparent;
+  border-top: var(--size) solid white;
+  top: 70%;
+}
+.whole{
+  display:inline-block ;
+  flex-direction: column;
+}
+.subbtn{
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+  font-size: xx-large;
+}
+/* button */
+.btn41-43 {
+  padding: 10px 25px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  background: transparent;
+  outline: none !important;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+}
+
+.btn-41 {
+  border: 2px solid rgb(255, 255, 255);
+  z-index: 1;
+  color: white;
+}
+
+.btn-41:after {
+  position: absolute;
+  content: "";
+  width: 0;
+  height: 100%;
+  top: 0;
+  left: 0;
+  direction: rtl;
+  z-index: -1;
+  background: rgb(255, 255, 255);
+  transition: all 0.3s ease;
+}
+
+.btn-41:hover {
+  color: rgb(0, 0, 0);
+}
+
+.btn-41:hover:after {
+  left: auto;
+  right: 0;
+  width: 100%;
+}
+
+.btn-41:active {
+  top: 2px;
 }
