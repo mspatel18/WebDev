@@ -11,16 +11,26 @@ let fromBase = document.getElementById("txtFromBase");
 let toBase = document.getElementById("txtToBase");
 
 function changeBase(number, fromBase, toBase) {
-    if (fromBase == 10)        
-        document.getElementById("lblResult").innerHTML = ((parseInt(number)).toString(toBase)).toUpperCase();//return (parseInt(number)).toString(toBase)
-    else if (toBase == 10)        
-        document.getElementById("lblResult").innerHTML = (parseInt(number, fromBase));//return parseInt(number, fromBase);
+    // if (fromBase == 10)        
+    //     document.getElementById("lblResult").innerHTML = ((parseInt(number)).toString(toBase)).toUpperCase();//return (parseInt(number)).toString(toBase)
+    if (toBase == 10)        
+        document.getElementById("lblResult").innerHTML = (parseFloat(number, fromBase));//return parseInt(number, fromBase);
     else {
         let numberInDecimal = parseInt(number, fromBase);
-        document.getElementById("lblResult").innerHTML = (parseInt(numberInDecimal).toString(toBase)).toUpperCase();
+        document.getElementById("lblResult").innerHTML = (parseFloat(numberInDecimal).toString(toBase)).toUpperCase();
     }
 }
-
+function reset( ){
+    document.getElementById("txtNumber").value = "";
+    document.getElementById("txtFromBase").value="";
+    document.getElementById("txtToBase").value="";
+    document.getElementById("lblResult").innerHTML="‎";
+};
+function swap() {
+    let temp =document.getElementById("txtFromBase").value;
+    document.getElementById("txtFromBase").value=document.getElementById("txtToBase").value;
+    document.getElementById("txtToBase").value=temp;
+}
 //onhover select option dropdown
 // function JSDropDown() {
 //     var x = document.getElementById("txtFromBase").options.length;

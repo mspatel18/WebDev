@@ -35,7 +35,7 @@
       </div>
       <div class="custom-select">
         <select name="To" id="txtToBase">
-          <option selected="selected">To</option>
+          <option value="" selected="selected">To</option>
           <option value="10">(10) Decimal</option>
           <option value="2">(2) Binary</option>
           <option value="8">(8) Octal</option>
@@ -47,9 +47,13 @@
         <button
           type="button"  class="btn41-43 btn-41"
           onclick='changeBase(document.getElementById("txtNumber").value, document.getElementById("txtFromBase").value,  document.getElementById("txtToBase").value)'
-        >
-          = Convert
+        >= Convert
         </button>
+        <button type="button" class="btn-41 btn41-43" onclick="reset()">Reset</button>
+        <button type="button" class="btn-41 btn41-43" onclick="swap()">Swap</button>
+      </div>
+      <div class="resetbtn">
+        
       </div>
       <div id="lblResult">‎</div>
     </div>
