@@ -152,6 +152,29 @@ select {
 .btn-41:active {
   top: 2px;
   }
+/*Convert button */
+.btn42-44 {
+  padding: 10px 25px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 600;
+  background: rgb(255, 255, 255);
+  color: rgb(27, 38, 48);
+  outline: none !important;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+}
+
+.btn-42 {
+  border: 2px solid rgb(255, 255, 255);
+  z-index: 1;
+  color: rgb(27, 38, 48);
+  font-weight: 400;
+}
+.btn-42:active {
+  top: 2px;
+  } 
 /* Use a media query to add a breakpoint at 800px: */
   @media screen and (max-width: 600px) {
     #title {
