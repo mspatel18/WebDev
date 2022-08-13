@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>IKnowYou</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <div>
+      <div id="title">
+        <h2>Get your IP Data</h2>
+      </div>
+      <div class="container">
+        <div class="currency">
+          <button type="button" onclick="getUserCurrency()">
+            Get Currency Data
+          </button>
+          <div>Name: <span id="name"></span></div>
+          <div>Code: <span id="code"></span></div>
+          <div>symbol: <span id="symbol"></span></div>
+          <div>native: <span id="native"></span></div>
+          <div>plural: <span id="plural"></span></div>
+        </div>
+        <div class="location">
+            <button type="button" onclick="getUserLocation()">Get Location Data</button>
+            <div>IP: <span id="IP"></span></div>
+            <div>City: <span id="city"></span></div>
+            <div>Region: <span id="region"></span></div>
+            <div>region_code: <span id="region_code"></span></div>
+            <div>region_type: <span id="region_type"></span></div>
+            <div>country_name: <span id="country_name"></span></div>
+            <div>country_code: <span id="country_code"></span></div>
+            <div>continent_name: <span id="continent_name"></span></div>
+            <div>continent_code: <span id="continent_code"></span></div>
+            <div>latitude: <span id="latitude"></span></div>
+            <div>longitude: <span id="longitude"></span></div>
+            <div>postal: <span id="postal"></span></div>
+            <div>calling_code: <span id="calling_code"></span></div>
+            <div>flag: <span id="flag"></span></div>
+            <div>emoji_flag: <span id="emoji_flag"></span></div>
+            <div>emoji_unicode: <span id="emoji_unicode"></span></div>
+        </div>
+        <div class="timezone">
+          <button type="button" onclick="getUserTimezone()">
+            Get Timezone Data
+          </button>
+          <div>Name: <span id="nameT"></span></div>
+          <div>abbr: <span id="abbr"></span></div>
+          <div>Daylight savings: <span id="is_dst"></span></div>
+          <div>Current Time: <span id="current_time"></span></div>
+        </div>
+        <div class="asn">
+          <button type="button" onclick="getUserASN()">
+            Get ASN Data
+          </button>
+          <div>asn: <span id="asn"></span></div>
+          <div>name: <span id="nameA"></span></div>
+          <div>domain: <span id="domain"></span></div>
+          <div>route: <span id="route"></span></div>
+          <div>type: <span id="type"></span></div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

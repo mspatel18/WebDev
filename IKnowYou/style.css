@@ -1,0 +1,22 @@
+#title{
+    width: 100%;
+    position: relative;
+    display: inline;
+    top: 50%;
+    left: 50%;
+}
+h2{
+    display: inline;
+}
+.currency{
+    display: flex;
+    flex-direction: column;
+    width: 20vh;
+}
+.container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+}
