@@ -1,12 +1,12 @@
 //API PROVIDER
 const ipdata = {
-    key: '<Enter your key here>',
+    key: 'key',
     baseurl: 'https://api.ipdata.co',
     currency: function(){
         return `${this.baseurl}/currency?api-key=${this.key}`;
     },
     location: function(){
-        return `${this.baseurl}?api-key=${this.key}&fields=ip,is_eu,city,region,region_code,country_name,country_code,continent_name,continent_code,latitude,longitude,postal,calling_code,flag,emoji_flag,emoji_unicode`;
+        return `${this.baseurl}?api-key=${this.key}&fields=ip,is_eu,city,region,region_code,region_type,country_name,country_code,continent_name,continent_code,latitude,longitude,postal,calling_code,flag,emoji_flag,emoji_unicode`;
     },
     timezone: function(){
         return`${this.baseurl}/time_zone?api-key=${this.key}`;
@@ -28,10 +28,21 @@ const ipdata = {
     }
 };
 //GET USER DATA
+// const currencyMap = new Map([
+//     ["name",0],
+//     ["code",1],
+//     ["symbol",2],
+//     ['native',3],
+//     ["plural",4]
+// ]);
 async function getUserCurrency(){
     const res = await fetch(ipdata.currency());
     const userCurrency = await res.json();
     //console.log(userCurrency);
+    // let text="";
+    // currencyMap.forEach(function(value,key){
+    //     document.getElementById(key).innerHTML=userCurrency.value;
+    // })
     document.getElementById("name").innerHTML=userCurrency.name;
     document.getElementById("code").innerHTML=userCurrency.code;
     document.getElementById("symbol").innerHTML=userCurrency.symbol;
@@ -79,3 +90,5 @@ async function getUserASN(){
     document.getElementById("route").innerHTML=userASN.route;
     document.getElementById("type").innerHTML=userASN.type;
 }
+
+//typing

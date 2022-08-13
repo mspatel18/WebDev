@@ -1,22 +1,87 @@
+
+body{
+
+
+    background-color: black;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+}
+.green{
+    color: rgb(0, 185, 0);
+    font-weight: 600;
+}
+span{
+    color: white;
+}
 #title{
     width: 100%;
     position: relative;
-    display: inline;
-    top: 50%;
-    left: 50%;
+    display: flex;
+    justify-content: center;
+    text-transform: uppercase;
+    
 }
 h2{
     display: inline;
 }
 .currency{
-    display: flex;
-    flex-direction: column;
-    width: 20vh;
+    width: 40vh;
+    margin: 20px;
+}
+.location{
+    width: 40vh;
+    margin: 20px;
+}
+.timezone{
+    width: 40vh;
+    margin: 20px;
+}
+.asn{
+    width: 40vh;
+    margin: 20px;
 }
 .container{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: flex-start;
 }
+.whole{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: space-around;
+}
+button{
+    font-family: 'Courier New', Courier, monospace;
+    padding: 5px;
+}
+/* From uiverse.io by @mrhyddenn */
+button {
+    padding: 10px 20px;
+    margin: 40px 0px;
+    border: none;
+    font-size: 17px;
+    color: black;
+    border-radius: 7px;
+    letter-spacing: 4px;
+    font-weight: 700;
+    text-transform: uppercase;
+    transition: 0.6s;
+    transition-property: box-shadow;
+  }
+  
+  button {
+    background: rgb(26, 255, 0);
+    box-shadow: 0 0 30px rgb(26, 255, 0);
+  }
+  
+  button:hover {
+    box-shadow: 0 0 5px rgb(26, 255, 0),
+                0 0 25px rgb(26, 255, 0),
+                0 0 50px rgb(26, 255, 0),
+                0 0 100px rgb(26, 255, 0);
+  }
