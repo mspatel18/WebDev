@@ -60,7 +60,6 @@ async function getUserLocation() {
     "longitude",
     "postal",
     "calling_code",
-    "flag",
     "emoji_flag",
     "emoji_unicode",
   ];
