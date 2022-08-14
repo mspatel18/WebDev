@@ -68,19 +68,19 @@ async function getUserLocation(){
 async function getUserTimezone(){
     const res = await fetch(ipdata.timezone());
     const userTimezone = await res.json();
-    let timezoneMap = ["nameT","abbr","is_dst","current_time"];
-
+    let timezoneMap = ["name","abbr","is_dst","current_time"];
+    //let time_zoneMap =["name","abbr","is_dst","current_time"]
     timezoneMap.forEach(function(value){
-        document.getElementById(value).innerHTML=userTimezone[value];
+        document.getElementById(value+'T').innerHTML=userTimezone[value];
     })
 }
 async function getUserASN(){
     const res = await fetch(ipdata.basicasn());
     const userASN = await res.json();
-    let asnMap = ["asn","nameA","domain","route","type"];
+    let asnMap = ["asn","name","domain","route","type"];
 
     asnMap.forEach(function(value){
-        document.getElementById(value).innerHTML=userASN[value];
+        document.getElementById(value+'A').innerHTML=userASN[value];
     })
 }
 
