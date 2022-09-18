@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Number Base Converter</title>
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
   </head>
   <body>
     
@@ -17,7 +16,7 @@
           <h2 class="typewrite" data-period="2000" data-type='[ "Octal to Binary", "Binary to Hex", "Hex to Decimal","Decimal to Octal"]'>
             <span class="wrap">‎</span>
           </h2>
-        
+          
       </div>
       <div>
         <input id="txtNumber" type="text" placeholder="Number" />
@@ -45,17 +44,20 @@
       </div>
       <div class="subbtn">
         <button
-          type="button"  class="btn42-44 btn-42"
-          onclick='changeBase(document.getElementById("txtNumber").value, document.getElementById("txtFromBase").value,  document.getElementById("txtToBase").value)'
+        type="button"  class="btn42-44 btn-42"
+        onclick='changeBase(document.getElementById("txtNumber").value, document.getElementById("txtFromBase").value,  document.getElementById("txtToBase").value)'
         >Convert
-        </button>
-        <button type="button" class="btn-41 btn41-43" onclick="reset()">Reset</button>
-        <button type="button" class="btn-41 btn41-43" onclick="swap()">Swap</button>
+      </button>
+      <button type="button" class="btn-41 btn41-43" onclick="reset()">Reset</button>
+      <button type="button" class="btn-41 btn41-43" onclick="swap()">Swap</button>
       </div>
       <div class="resetbtn">
         
       </div>
       <div id="lblResult">‎</div>
     </div>
+    <script src="script.js"></script>
+    <script src='https://cdn.jsdelivr.net/gh/AlexSp3/Basenumber.js@main/BaseNumber.min.js'></script>
   </body>
-</html>
+  </html>
+  
