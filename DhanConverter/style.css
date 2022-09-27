@@ -1,0 +1,7 @@
+.container{
+    display: flexbox;
+    justify-content: center;
+}
+#lblResult{
+    display: inline-flex;
+}
