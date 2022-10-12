@@ -1,0 +1,42 @@
+<div class="container">
+  <div class="el center"></div>
+  <div class="el left"></div>
+  <div class="el right"></div>
+</div>
+<style>
+  * {
+    margin: 0px;
+  }
+  .container {
+    width: 100vw;
+    height: 100vh;
+    background: #62306d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .el {
+    position: absolute;
+    background: #f7ec7d;
+  }
+  .center {
+    width: 100px;
+    height: 100px;
+    top: 50px;
+    border-radius: 100% 100% 0px 0px;
+  }
+  .left {
+    width: 100px;
+    height: 100px;
+    top: 150px;
+    left: 50px;
+    border-radius: 0px 0px 100% 100%;
+  }
+  .right {
+    width: 100px;
+    height: 100px;
+    top: 150px;
+    right: 50px;
+    border-radius: 0px 0px 100% 100%;
+  }
+</style>
