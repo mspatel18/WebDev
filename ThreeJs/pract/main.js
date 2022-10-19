@@ -50,7 +50,7 @@ scene.add( lightHelper, gridHelper );
 
 function animate() {
 	requestAnimationFrame( animate );
-	// camera.position.x += 0.1;
+	camera.position.x += 0.1;
 //   controls.update();
 
 	renderer.render( scene, camera );
