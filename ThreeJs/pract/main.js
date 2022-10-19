@@ -2,6 +2,8 @@ import * as THREE from 'three';
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls.js';
 import './style.css'
 import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
+
+
 const scene = new THREE.Scene();
 const camera = new THREE.PerspectiveCamera( 75, window.innerWidth / window.innerHeight, 0.1, 1000 );
 
@@ -38,15 +40,18 @@ light.position.set( 20, 20,20 );
 scene.add( ambientlight, light );
 
 camera.position.z = 5;
+// camera.rotation.x = 1;
 
 const lightHelper = new THREE.PointLightHelper( light );
 const gridHelper = new THREE.GridHelper( 200, 50 );
+// const cameraHelper = new THREE.CameraHelper( camera );
 scene.add( lightHelper, gridHelper );
-const controls = new OrbitControls( camera, renderer.domElement );
+// const controls = new OrbitControls( camera, renderer.domElement );
 
 function animate() {
 	requestAnimationFrame( animate );
-  controls.update();
+	// camera.position.x += 0.1;
+//   controls.update();
 
 	renderer.render( scene, camera );
 
