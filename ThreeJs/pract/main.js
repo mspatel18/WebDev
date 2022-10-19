@@ -50,9 +50,7 @@ light2.position.set( -20, -20,-20 );
 scene.add( ambientlight, light1,light2 );
 
 camera.position.z = 5;
-// camera.position.x = 5;
-// camera.position.y = 5;
-// camera.rotation.x = 1;
+
 
 const lightHelper = new THREE.PointLightHelper( light1 );
 const gridHelper = new THREE.GridHelper( 200, 50 );
