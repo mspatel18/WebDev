@@ -60,8 +60,7 @@ const controls = new OrbitControls( camera, renderer.domElement );
 
 function animate() {
 	requestAnimationFrame( animate );
-	// camera.rotateOnAxis(new THREE.Vector3(0,1,0),0.01);
-	// camera.rotation.z += 0.1;
+
 	camera.position.y += 0.1;
 	camera.position.z += 0.1;
   controls.update();
