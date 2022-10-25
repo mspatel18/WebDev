@@ -1,5 +1,5 @@
 {
-  "name": "3d-world",
+  "name": "cannonjs",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -12,7 +12,7 @@
     "vite": "^3.1.0"
   },
   "dependencies": {
-    "three": "^0.145.0",
-    "three-dracoloader": "^0.0.1"
+    "cannon-es": "^0.20.0",
+    "three": "^0.145.0"
   }
 }
