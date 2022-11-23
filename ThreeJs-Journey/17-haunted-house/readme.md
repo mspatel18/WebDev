@@ -15,4 +15,4 @@ npm run dev
 npm run build
 ```
 # Work done till now
-![image](https://user-images.githubusercontent.com/90763685/203374743-c82457b0-f35c-4625-ae63-636acfd0dc57.png)
+![image](https://user-images.githubusercontent.com/90763685/203639564-f6507fd2-9b43-449d-8d29-b59e1a60265f.png)
