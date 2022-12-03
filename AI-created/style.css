@@ -1,0 +1,39 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    text-align: center;
+  }
+  
+  h1 {
+    font-size: 32px;
+    color: #00b0ff;
+    margin-bottom: 24px;
+  }
+  
+  p {
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 24px;
+  }
+  
+  .project {
+    display: inline-block;
+    margin: 24px;
+    text-align: left;
+    vertical-align: top;
+  }
+  
+  .project img {
+    width: 300px;
+    height: 200px;
+    border: 1px solid #ccc;
+  }
+  
+  .project h3 {
+    font-size: 24px;
+    color: #00b0ff;
+    margin-top: 12px;
+    margin-bottom: 12px;
+  }
+  
