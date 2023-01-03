@@ -22,7 +22,7 @@ inputField.addEventListener('change', function() {
   const options = {
     method: 'GET',
     headers: {
-      'X-RapidAPI-Key': 'f02d618031msh48b643b8144e0e3p1cf063jsn25d7a2902973',
+      'X-RapidAPI-Key': '',
       'X-RapidAPI-Host': 'youtube-mp3-download1.p.rapidapi.com'
     }
   };
