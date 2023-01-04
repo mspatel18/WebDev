@@ -1,32 +1,55 @@
-<!-- In the popup.html file: -->
-
 <!DOCTYPE html>
 <html>
   <head>
     <title>My Extension</title>
     <style>
       /* Add any styles for your popup here */
-      div{
-        background-color: #f1f1f1;
-        padding: 10px;
-        border: 1px solid #ccc;
-        border-radius: 5px;
+      @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600;900&display=swap');
+      body{
+        /* background-color: rgb(9, 0, 61); */
+        background: #141E30;  /* fallback for old browsers */
+        background: -webkit-linear-gradient(to right, #1C1D1E, #141E30);  /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, #1C1D1E, #141E30); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
         width: 300px;
-        height: 100px;
-        margin: 0 auto;
-        text-align: center;
-        font-size: 20px;
-        font-family: sans-serif;
+        height: 350px;
       }
+      .title{
+        margin-top: 20px;
+        font-family:'Montserrat', sans-serif;
+        font-size: 30px;
+        font-weight:900;
+        background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+      }    
+      .desc{
+        color: white;
+        margin-top: 10px;
+        /* background-color: #f1f1f1; */
+        font-family:'Montserrat', sans-serif;
+        font-size: 17px;
+        font-weight:600;       
+        /* margin: 0 auto; */        
+      }
+      input{
+        margin-top: 10px;
+      }
+      button{
+        margin-top:10px;
+        padding: 5px 10px;
+      }
+
     </style>
   </head>
   <body>
-    <h1>Youtube Video to MP3 downloader</h1>
-    <div>Right Click or paste the url here to download your mp3 file</div>
-    <input type="text" id="inputID"></input> 
-    <button type="submit">Submit</button>
-    <!-- <div id="output">Download</div> -->
-    <a href="" id="output">Download</a>
+    <div class="title">Youtube Video to MP3 downloader</div>
+    <div class="desc">Paste the url here to download your mp3 file</div>
+    <input type="text" id="inputID">Paste you URL</input> 
+    <button type="submit" href="" id="output">Download</button>
+    <!-- <div id="test"></div>
+    <div id="error"></div> -->
+    
     <script src="popup.js"></script>
   </body>
 </html>
