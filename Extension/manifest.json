@@ -1,8 +1,8 @@
 {
     "manifest_version": 3,
-    "name": "YT Video to MP3 downloader",
-    "description": "Extenstion to download mp3 file from youtube",
-    "version": "0.0.0.1",
+    "name": "Youtube Video to MP3 Downloader",
+    "description": "Extension to download mp3 file from youtube",
+    "version": "1.0",
     "action": {
         "default_icon": "icon.png",
         "default_popup": "popup.html"
@@ -13,7 +13,7 @@
         "48": "icon.png",
         "128": "icon.png"
       },
-    "permissions": ["activeTab", "storage", "tabs","contextMenus"],
+    "permissions": ["activeTab","tabs","contextMenus"],
     "content_scripts": [
         {
             "matches": ["<all_urls>"],
