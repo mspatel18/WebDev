@@ -23,17 +23,26 @@
         -webkit-text-fill-color: transparent;
         background-clip: text;
       }    
-      .desc{
+      #desc{
         color: white;
         margin-top: 10px;
-        /* background-color: #f1f1f1; */
         font-family:'Montserrat', sans-serif;
         font-size: 17px;
         font-weight:600;       
-        /* margin: 0 auto; */        
+        /* margin-bottom: 10px; */
+      }
+      #link{
+        color: #ff5d5d;
+        margin-top: 10px;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 15px;
+        font-weight: 600;
+        margin-left: 90px;      
       }
       input{
         margin-top: 10px;
+        padding: 5px 10px;
+        color: #141E30;
       }
       button{
         margin-top:10px;
@@ -43,13 +52,10 @@
     </style>
   </head>
   <body>
-    <div class="title">Youtube Video to MP3 downloader</div>
-    <div class="desc">Paste the url here to download your mp3 file</div>
-    <input type="text" id="inputID">Paste you URL</input> 
-    <button type="submit" href="" id="output">Download</button>
-    <!-- <div id="test"></div>
-    <div id="error"></div> -->
-    
+    <div class="title">YT Video to MP3 downloader</div>
+    <input type="text" id="input" placeholder="Paste your link here">
+    <div id="desc">Your link will be generated shortly</div>
+    <a id="link" href="" target="_blank"></a>
     <script src="popup.js"></script>
   </body>
 </html>
