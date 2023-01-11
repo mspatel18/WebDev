@@ -1,0 +1,7 @@
+.wrapper{
+    display: flex;
+    flex-direction: row;
+}
+.rentColumn{
+    margin-right: 10px;
+}
