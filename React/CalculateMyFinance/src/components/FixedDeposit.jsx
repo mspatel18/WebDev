@@ -1,6 +1,4 @@
-import React from 'react'
-import { useState,useEffect } from 'react'
-
+import React, { useState,useEffect } from 'react'
 export default function FixedDeposit() {
     const [principalAmount, setPrincipalAmount] = useState(100000)
     const [interest, setInterest] = useState(7)
