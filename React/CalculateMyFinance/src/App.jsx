@@ -5,7 +5,7 @@ import InvestmentCalculator from './components/InvestmentCalculator.jsx'
 import FixedDeposit from './components/FixedDeposit.jsx'
 import BuyOrRent from './components/BuyOrRent.jsx'
 function App() {
-  const [currentComponent, setCurrentComponent] = useState('BuyOrRent')
+  const [currentComponent, setCurrentComponent] = useState('InvestmentCalculator')
   return (
     <div>
       <h1>Wealth Wellness</h1>

@@ -15,7 +15,7 @@ export default function FixedDeposit() {
             <div>Interest Rate <input type="number" defaultValue={interest} onChange={e => setInterest(e.target.value)} />% p.a.</div>
             <div>Time Period <input type="number" defaultValue={timePeriod} onChange={e => setTimePeriod(e.target.value)}/>month</div>
             <div>Compunding Frequency <input type="number" defaultValue={frequency} onChange={e => setFrequency(e.target.value)} /></div>
-            <div>Maturity Amount <div>{maturityAmount}</div></div>
+            <div>Maturity Amount <div>{maturityAmount.toLocaleString('en-IN', {style:'currency', currency:'INR'})}</div></div>
         </>
     )
 }
