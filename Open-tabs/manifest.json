@@ -1,0 +1,25 @@
+{
+    "manifest_version": 3,
+    "name": "Search 10 things",
+    "description": "Extension to search 10 things",
+    "version": "1.0",
+    "action": {
+        "default_icon": "icon.png",
+        "default_popup": "popup.html"
+    },
+    "icons": {
+        "16": "icon.png",
+        "32": "icon.png",
+        "48": "icon.png",
+        "128": "icon.png"
+      },
+    "permissions": ["activeTab"],
+    
+    "content_scripts": [
+        {
+            "matches": ["<all_urls>"],
+            "js": ["popup.js"]
+        }
+    ]
+  }
+  
